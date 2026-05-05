@@ -640,6 +640,7 @@
  * are defined. (@c NDEBUG is not used since it is allowed to have
  * different values in different translation units.)
  */
+#define MPACK_DEBUG 0 // !!!! Not turn on in release. Else error in pack/unpack call HardFault
 #if !defined(MPACK_DEBUG)
     #if defined(DEBUG) || defined(_DEBUG)
         #define MPACK_DEBUG 1
